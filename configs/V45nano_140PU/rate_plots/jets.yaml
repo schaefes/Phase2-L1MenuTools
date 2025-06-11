@@ -57,6 +57,24 @@ JetExtendedRatesByRegion:
     max: 420
     step: 20
 
+JetExtendedRatesTags:
+  sample: MinBias
+  version: V45nano_140PU
+  test_objects:
+    - L1puppiExtJetSC4:default:inclusive
+    - L1puppiJetSC4NG:default:inclusive
+    - L1puppiExtJetSC4:bjetnn:inclusive
+    - L1puppiJetSC4NG:bjetnn:inclusive
+    - L1puppiJetSC4NG:cjetnn:inclusive
+    - L1puppiJetSC4NG:lightjetnn:inclusive
+    - L1puppiJetSC4NG:gjetnn:inclusive
+    # - L1puppiJetSC4NG:taupjetnn:inclusive
+    # - L1puppiJetSC4NG:taunjetnn:inclusive
+  binning:
+    min: 40
+    max: 420
+    step: 20
+
 # JetSC8Rates:
 #   sample: MinBias
 #   version: V45nano_140PU

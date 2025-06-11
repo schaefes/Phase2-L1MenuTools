@@ -1,12 +1,11 @@
 V45nano_140PU:
   MinBias:
-    ntuple_path: /eos/cms/store/group/dpg_trigger/comm_trigger/L1Trigger/stella/phase2/menu/ntuples/MinBias_TuneCP5_14TeV-pythia8/MinBias_Spring24_140PU_V44_reL1wTT/250411_135445/0000/*.root
+    ntuple_path: /eos/cms/store/group/dpg_trigger/comm_trigger/L1Trigger/roward/phase2/menu/ntuples/Spring24/151pre3/v45/MinBias_TuneCP5_14TeV-pythia8/MinBias_Spring24_140PU_V45_reL1wTT_151pre3/250605_192615/hadd/*.root
     trees_branches:
       Events:
         # PV
         L1PV: [z0]
         ## EG
-        L1EG: "all"
         L1tkPhoton: "all"
         L1tkElectron: "all"
         L1EGbarrel: "all"
@@ -29,6 +28,7 @@ V45nano_140PU:
         L1puppiJetSC4: [pt, eta, phi]
         L1puppiJetSC8: [pt, eta, phi]
         L1puppiExtJetSC4: [pt, eta, phi, btagScore]
+        L1puppiJetSC4NG: [pt, eta, phi, udsTagScore, bTagScore, cTagScore, gTagScore]
         L1puppiJetHisto: [pt, eta, phi]
         L1caloJet: [pt, eta, phi]
         ## track-only
@@ -37,3 +37,27 @@ V45nano_140PU:
         L1TrackJet: [pt, eta, phi]
         L1TrackTripletWord: [pt]
         L1ExtTrackHT: [ht]
+
+  TT:
+    ntuple_path: /eos/cms/store/group/dpg_trigger/comm_trigger/L1Trigger/roward/phase2/menu/ntuples/Spring24/151pre3/v45/TT_TuneCP5_14TeV-powheg-pythia8/TT_Spring24_200PU_V45_reL1wTT_151pre3/250518_080708/hadd/*.root
+    trees_branches:
+      Events:
+        # gen
+        GenJet: [pt, eta, phi, partonFlavour]
+        GenJetAK8: [pt, eta, phi]
+        GenMET: "all"
+        # # sums
+        L1puppiMET: [pt, phi]
+        L1puppiMLMET: [pt]
+        L1puppiJetSC4sums: [pt, phi]
+        L1puppiHistoJetSums: [pt, phi]
+        # # jets
+        L1puppiJetSC4: [pt, eta, phi]
+        L1puppiJetSC8: [pt, eta, phi]
+        L1puppiExtJetSC4: [pt, eta, phi, btagScore]
+        L1puppiJetSC4NG: [pt, eta, phi, udsTagScore, bTagScore, cTagScore, gTagScore]
+        L1puppiJetHisto: [pt, eta, phi]
+        L1caloJet: [pt, eta, phi]
+        L1TrackMET: [pt]
+        L1TrackHT: [ht, mht]
+        L1TrackJet: [pt, eta, phi]
